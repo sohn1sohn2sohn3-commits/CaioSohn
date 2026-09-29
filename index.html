@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100e">
+
+  <title>Caio Sohn — Digital Studio</title>
+  <meta name="description" content="Desenvolvimento de sites, inteligência artificial e automações. Portfólio de Caio Sohn.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="nav container">
+      <a class="brand" href="#inicio" aria-label="Caio Sohn">
+        CAIO<span>®</span>SOHN
+      </a>
+
+      <nav class="nav-links" id="navigation" aria-label="Navegação">
+        <a href="#sobre" data-i18n="navAbout">SOBRE</a>
+        <a href="#servicos" data-i18n="navServices">SERVIÇOS</a>
+        <a href="#projetos" data-i18n="navProjects">PROJETOS</a>
+        <a href="#contato" data-i18n="navContact">CONTATO</a>
+      </nav>
+
+      <div class="nav-right">
+        <div class="language-switch" aria-label="Idioma">
+          <button class="lang active" data-lang="pt" aria-pressed="true">PT</button>
+          <span>/</span>
+          <button class="lang" data-lang="en" aria-pressed="false">EN</button>
+          <span>/</span>
+          <button class="lang" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle"
+          aria-label="Abrir menu"
+          aria-controls="navigation"
+          aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-content container">
+        <div class="system-badge">
+          <span class="online-dot"></span>
+          <span data-i18n="system">DIGITAL STUDIO / SISTEMA ONLINE</span>
+        </div>
+
+        <h1 data-i18n-html="heroTitle">
+          CRIANDO O<br>
+          FUTURO DIGITAL<span class="period">.</span>
+        </h1>
+
+        <p class="hero-description" data-i18n="heroDescription">
+          Sites, inteligência artificial e automações.
+          Tecnologia e design a serviço de novas ideias.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button button-light" href="#projetos">
+            <span data-i18n="viewProjects">VER PROJETOS</span>
+            <span>↗</span>
+          </a>
+
+          <a class="button button-outline" href="#contato">
+            <span data-i18n="contactButton">ENTRAR EM CONTATO</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <div class="hero-coordinates">
+          <span>CAIO SOHN / DIGITAL STUDIO</span>
+          <span>WEB — AI — AUTOMATION</span>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-indicator">
+        <span data-i18n="scroll">EXPLORAR</span>
+        <span>↓</span>
+      </a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-number">01 / 04</span>
+          <span data-i18n="aboutLabel">APRESENTAÇÃO</span>
+        </div>
+
+        <div class="about-layout">
+          <h2 class="section-title reveal" data-i18n-html="aboutTitle">
+            TECNOLOGIA<br>
+            COM <em>PROPÓSITO.</em>
+          </h2>
+
+          <div class="about-text reveal">
+            <p data-i18n="aboutText1">
+              Desenvolvo experiências digitais que conectam
+              design, tecnologia e estratégia.
+            </p>
+
+            <p data-i18n="aboutText2">
+              Meu trabalho é focado na criação de sites,
+              landing pages, aplicações com inteligência
+              artificial e automações que simplificam
+              processos e apresentam negócios de forma
+              profissional.
+            </p>
+
+            <a href="#servicos" class="inline-link">
+              <span data-i18n="exploreServices">EXPLORAR SERVIÇOS</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-number">02 / 04</span>
+          <span data-i18n="servicesLabel">O QUE EU DESENVOLVO</span>
+        </div>
+
+        <div class="section-heading reveal">
+          <h2 class="section-title" data-i18n-html="servicesTitle">
+            SOLUÇÕES<br>DIGITAIS<span class="period">.</span>
+          </h2>
+
+          <p data-i18n="servicesIntro">
+            Desenvolvimento focado em funcionalidade,
+            clareza e identidade visual.
+          </p>
+        </div>
+
+        <div class="service-list">
+          <article class="service-item reveal">
+            <span class="item-number">001</span>
+            <div class="service-details">
+              <h3 data-i18n="service1Title">SITES & LANDING PAGES</h3>
+              <p data-i18n="service1Desc">
+                Desenvolvimento de experiências web
+                responsivas, modernas e orientadas
+                à apresentação e conversão.
+              </p>
+              <div class="service-tags">
+                <span>WEB DESIGN</span>
+                <span>DEVELOPMENT</span>
+                <span>UI / UX</span>
+              </div>
+            </div>
+            <span class="item-arrow">↗</span>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="item-number">002</span>
+            <div class="service-details">
+              <h3 data-i18n="service2Title">INTELIGÊNCIA ARTIFICIAL</h3>
+              <p data-i18n="service2Desc">
+                Desenvolvimento de soluções que utilizam
+                inteligência artificial para criar novas
+                possibilidades de interação e atendimento.
+              </p>
+              <div class="service-tags">
+                <span>AI</span>
+                <span>LLM</span>
+                <span>INTEGRATION</span>
+              </div>
+            </div>
+            <span class="item-arrow">↗</span>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="item-number">003</span>
+            <div class="service-details">
+              <h3 data-i18n="service3Title">AUTOMAÇÕES & SISTEMAS</h3>
+              <p data-i18n="service3Desc">
+                Integrações e processos automatizados
+                para organizar informações, conectar
+                ferramentas e reduzir tarefas repetitivas.
+              </p>
+              <div class="service-tags">
+                <span>AUTOMATION</span>
+                <span>WORKFLOWS</span>
+                <span>SYSTEMS</span>
+              </div>
+            </div>
+            <span class="item-arrow">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section projects" id="projetos">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-number">03 / 04</span>
+          <span data-i18n="projectsLabel">TRABALHOS SELECIONADOS</span>
+        </div>
+
+        <div class="section-heading reveal">
+          <h2 class="section-title" data-i18n-html="projectsTitle">
+            PROJETOS<br>EM DESTAQUE<span class="period">.</span>
+          </h2>
+          <p data-i18n="projectsIntro">
+            Conceitos que demonstram minha abordagem
+            de desenvolvimento e design.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-item reveal">
+            <span class="project-index">01 — CONCEPT</span>
+
+            <div class="project-center">
+              <span class="project-category">WEB DEVELOPMENT / UI DESIGN</span>
+              <h3>VYRON</h3>
+              <p data-i18n="project1Desc">
+                Landing page conceitual para estética
+                automotiva, com identidade premium,
+                apresentação de serviços e orçamento.
+              </p>
+            </div>
+
+            <span class="project-symbol">↗</span>
+          </article>
+
+          <article class="project-item reveal">
+            <span class="project-index">02 — CONCEPT</span>
+
+            <div class="project-center">
+              <span class="project-category">ARTIFICIAL INTELLIGENCE</span>
+              <h3>AI INTERFACE</h3>
+              <p data-i18n="project2Desc">
+                Conceito de interface conversacional
+                para uma aplicação com inteligência
+                artificial.
+              </p>
+            </div>
+
+            <span class="project-symbol">↗</span>
+          </article>
+        </div>
+
+        <p class="project-disclaimer" data-i18n="projectDisclaimer">
+          Projetos conceituais apresentados como
+          demonstrações, não como trabalhos de clientes.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-number">04 / 04</span>
+          <span data-i18n="contactLabel">INICIAR UMA CONVERSA</span>
+        </div>
+
+        <div class="contact-main reveal">
+          <div class="system-badge">
+            <span class="online-dot"></span>
+            <span data-i18n="contactBadge">CONTATO PROFISSIONAL</span>
+          </div>
+
+          <h2 data-i18n-html="contactTitle">
+            VAMOS CRIAR<br>ALGO <em>NOVO.</em>
+          </h2>
+
+          <p data-i18n="contactDescription">
+            Tem um projeto em mente? Entre em contato
+            para conversar sobre sua ideia.
+          </p>
+
+          <a class="contact-mail"
+            href="mailto:sohn1sohn2sohn3@gmail.com?subject=Projeto%20digital">
+            <span>sohn1sohn2sohn3@gmail.com</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <div class="contact-links">
+          
+<a
+  href="https://ig.me/m/csohn_"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="contact-row instagram-direct"
+>
+  <span>INSTAGRAM / DIRECT</span>
+  <span data-i18n="sendDirect">
+    ENVIE SUA DÚVIDA ↗
+  </span>
+</a>
+
+          <div class="contact-row unavailable">
+            <span>WHATSAPP <span id="whatsappNumber"></span></span>
+            <span data-i18n="whatsappUnavailable">TEMPORARIAMENTE INDISPONÍVEL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#inicio" class="brand">CAIO<span>®</span>SOHN</a>
+      <span>© <span id="year"></span> CAIO SOHN</span>
+      <a href="#inicio" data-i18n="backTop">VOLTAR AO TOPO ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
